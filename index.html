@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schmeckt Gut</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                    <img src="imagenes/Logo.jpg" alt="Logo Schmeckt Gut" class="rounded-circle border border-black me-2" width="60"
+                        height="50" id="logo">
+                    <span class="d-none d-sm-block">Schmeckt Gut</span>
+                </a>
+
+                <!-- Navbar desplegable -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/info.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cervezas.html">Cervezas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">  
+        <section class="hero-banner">
+             <div class="overlay"></div>
+                <div class="content">
+                    <h1>HECHAS A MANO, PENSADAS PARA VOS</h1>
+                            <p>Bienvenido al lado libre de la cerveza. Acá no hay fórmulas ni producción en masa: solo pasión, fuego y maltas reales. Cada birra nace de la rebeldía y se sirve con actitud.</p>
+                                <div class="buttons">
+                                  <a href="#" class="button primary">COMPRAR AHORA</a>
+                                  <a href="https://whatsapp.com/" class="button whatsapp">WHATSAPP</a>
+                                </div>
+                </div>
+        </section>
+        <!-- Sección de video -->
+        <!-- <section class="container my-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <video 
+                        class="rounded mb-2 w-100"
+                        src="imagenes/video-cerveza.mp4"
+                        controls
+                        preload="metadata"
+                        aria-label="Degustación de cerveza artesanal">
+                    </video>
+                </div>
+            </div>
+        </section> -->
+        <section class="video-hero">
+            <video class="video-bg" src="imagenes/video-cerveza.mp4" autoplay muted loop playsinline></video>                
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <h2>Cerveza artesanal con identidad</h2>
+                <p>Hecha con fuego, pasión y rebeldía.</p>
+                <a href="https://wa.me/549" class="btn-video">HACÉ TU PEDIDO</a>
+            </div>
+        </section>
+
+
+        <!-- Sección de mapa -->
+        <section class="container my-4 col-md-8 offset-md-2">
+            <h4 class="mb-3 text-start">Aquí tenes el mapa por si queres ubicarnos</h4>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.0646505368923!2d-58.393081423388374!3d-34.70354926277905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2168efdde3%3A0x7e800a4494b3eaea!2sV%C3%A9lez%20S%C3%A1rsfield%202757-2795%2C%20B1824ACV%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1762319157152!5m2!1ses-419!2sar"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Schmeckt Gut en Google Maps">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white text-dark py-3" data-bs-theme="dark">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- Logo footer -->
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+                <img src="imagenes/Logo.jpg" alt="Logo Schmeckt Gut" class="mr-2 rounded-circle" width="100" height="85">
+                <span class="ms-3 fs-5 fw-bold">Schmeckt Gut</span>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="text-center mb-3 mb-md-0">
+                <p class="m-0">© Todos los derechos reservados</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div>
+                <ul class="list-unstyled d-flex gap-3 mb-0">
+                    <li><a href="https://instagram.com/" class="text-dark text-decoration-none">Instagram</a></li>
+                    <li><a href="https://facebook.com/" class="text-dark text-decoration-none">Facebook</a></li>
+                    <li><a href="https://whatsapp.com/" class="text-dark text-decoration-none">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous" defer></script>
+</body>
+</html>
